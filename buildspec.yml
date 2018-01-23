@@ -3,7 +3,7 @@ phases:
   install:
     commands:
       - npm install time
-      - aws cloudformation package --template-file samtemplate.yaml --s3-bucket raja-sam-test 
+      - aws cloudformation package --template-file sam-template.yaml --s3-bucket raja-sam-test 
                                    --output-template-file NewSamTemplate.yaml
 artifacts:
   type: zip
